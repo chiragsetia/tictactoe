@@ -26,6 +26,8 @@ public static final int alreadyOccupied=6;
 	}
 	public int status(int x,int y,char Symbol)
 	{
+		x=x-1;
+		y=y-1;
 		if(x>=BoardSize||x<0||y<0||y>=BoardSize)
 			return invalid;
 		if(boardArray[x][y]!=' ')
